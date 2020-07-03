@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Forms Review</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <hr>
+      <form action="submission.html" method="POST"> <!-- form의 목적은 사용자가 정보를 입력하고 보낼수 있도록 하는 것이다
+action속성은 양식의 정보의 위치를 결정한다  method속성은 정보의 전송 및 처리 방법을 결정한다.-->
+				<h1>Create a burger!</h1>
+        <section class="protein">
+          <label for="patty">What type of protein would you like?</label>
+          <!-- 사용자가 input을 올바르게 식별하기 위해 적절하게 명명된 label을 사용한다 -->
+		  <!-- label과 input을 연결하려면 input에 id속성을 설정하고 그 다음에 label의 for속성과 input의 in속성을 지정한다 -->
+    			<input type="text" name="patty" id="patty" required> <!-- required는 빈칸을 반드시 채우라는 뜻이다 -->
+				<!-- 사용자가 정보를 입력 할 수 있는 필드를 추가하려면 input을 사용하고 type속성을 선택한 필드로 설정해라 -->
+				<!-- type를 "text"로 설정하면 텍스트 입력을 위한 단일 행 필드가 작성된다 -->
+				<!-- type를 "password"로 설정하면 텍스트 입력을 검열하는 단일 행 필드가 작성된다 -->
+        </section>
+        <hr>
+        
+        <section class="patties">
+          <label for="amount">How many patties would you like?</label>
+          <input type="number" name="amount" id="amount" required pattern="[a-z A-Z]+"> 
+		  <!-- type를 "number"로 설정하면 숫자 입력을 위한 단일 행 필드가 작성된다. -->
+		  <!-- pattern을 이용해 빈칸에 형식을 맞출수 있다. 예시( pattern="[0-9]{14,16} 대가로는 안에있는 숫자들을 사용하라는 거고 중괄호는 14글자에서 16글자 사이로 맞추라는 것이다)-->
+		  <!-- number에서 최대최소를 정할떄는 min, max -->
+		  <!-- text등에서 글자수를 정하려면 minlength, maxlength를 사용 -->
+        </section
+        <hr>
+        
+        <section class="cooked">
+          <label for="doneness">How do you want your patty cooked</label>
+          <br>
+          <span>Rare</span>
+          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+		  <!-- type를 range로 설정하면 숫자 법위에서 선택할 수 있는 슬라이더가 만들어진다. -->
+		  <!-- step을 사용하여 슬라이더를 매끈하게 움직이게 할 수 있다. step이 낮을수록 유동적으로 움직인다. -->
+          <span>Well-Done</span>
+        </section>
+        <hr>
+        
+        <section class="toppings">
+          <span>What toppings would you like?</span>
+          <br>
+          <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+          <label for="lettuce">Lettuce</label>
+          <input type="checkbox" name="topping" id="tomato" value="tomato">
+          <label for="tomato">Tomato</label>
+          <input type="checkbox" name="topping" id="onion" value="onion">
+          <label for="onion">Onion</label>
+		  <!-- type를 "checkbox"로 설정하면 다른 checkbox와 쌍을 이룰 수 있는 단일 확인란이 만들어진다. -->
+        </section>
+        <hr>
+        
+        <section class="cheesy">
+          <span>Would you like to add cheese?</span>
+          <br>
+          <input type="radio" name="cheese" id="yes" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="cheese" id="no" value="yes">
+          <label for="no">No</label>
+		  <!-- type를 "radio"로 설정하면 다른 radio 버튼과 페어링 할 수 있는 radio버튼이 생성된다. -->
+        </section>
+        <hr>
+       
+        <section class="bun-type">
+          <label for="bun">What type of bun would you like?</label>
+          <select name="bun" id="bun">
+            <option value="sesame">Sesame</option>
+            <option value="potatoe">Potato</option>
+            <option value="pretzel">Pretzel</option>
+          </select>
+		  <!-- select는 option요소로 채워지고 드롭 다운 목록 선택을 렌더링한다. -->
+        </section>
+        <hr>
+        
+        <section class="sauce-selection">
+          <label for="sauce">What type of sauce would you like?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="ketchup"></option>
+            <option value="mayo"></option>
+            <option value="mustard"></option>
+          </datalist>
+		  <!-- datalist는 option요소로 채워지고 <input>과 함께 작동하여 선택 사항을 검색한다. -->
+		  <!-- inputdml list와 datalist의 id가 연결된다 -->
+		  <!-- select와 차이점은 datalist는 항목 외에도 직접 입력할 수 있다는 것이다. -->
+        </section>
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+		  <!-- textarea는 사용자가 직접 입력이 가능한 영역이 있는 텍스트 입력 필드이다. -->
+        </section>
+        <hr>
+
+        <section class="submission">
+          <input type="submit" value="Submit">
+		  <!-- submit은 지금까지 입력한 정보를 제출하는 버튼을 생성하는 것이다. -->
+        </section>
+      </form>
+	  <!-- form이 제출되면 입력을 허용하는 필드 name과 해당 필드 값이 name= value쌍으로 전송된다. -->
+    </section>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ship To It - Company Packing List</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  
+</head>
+<body>
+<table> <!-- 테이블을 만든다 -->  <!-- 테이블은 머리, 몸통 및 바닥 글의 세가지 주요 섹션으로 나눌 수 있다. -->
+  
+  <thead> <!-- 테이블의 머리를 만든다 -->
+  <tr> <!-- 테이블에 행을 추가한다 -->
+    <th scope="col">Company Name</th> <!-- 표 제목은 데이터의 의미를 명확하게 보여준다. -->
+    <th scope="col">Number of Items to Ship</th> <!-- scope를 통해 이 코드가 무엇에 제목인지 확인하게 해준다. -->
+
+    <th scope="col">Next Action</th>
+    </tr>
+    </thead>
+    <tbody> <!-- 테이블 본문이 생성된다. -->
+    <tr>
+      <td>Adam's Greenworks</td> <!-- 행에 데이터를 추가할 때 사용한다 -->
+      <td>14</td>
+      <td>Package Items</td>
+      </tr>
+      <tr>
+        <td>Davie's Burgers</td>
+        <td>2</td>
+        <td>Send Invoice</td>
+        </tr>
+        <tr>
+  <td>Baker's Bike Shop</td>
+  <td>3</td>
+  <td>Send Invoice</td>
+</tr>
+<tr>
+  <td>Miss Sally's Southern</td>
+  <td>4</td>
+  <td>Ship</td>
+</tr>
+<tr>
+  <td>Summit Resort Rentals</td>
+  <td>4</td>
+  <td>Ship</td>
+</tr>
+</tbody>
+<tfoot> <!-- 테이블 바닥글을 만든다 -->
+<tr>
+  <td>Strike Fitness</td>
+  <td>1</td>
+  <td>Enter Order</td>
+</tr>
+</tfoot>
+  </table>
+
+ <br><br><br>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th></th> <!-- 빈공백이 생긴다 -->
+      <th scope="col">Saturday</th>
+      <th scope="col">Sunday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Morning</th>
+      <td rowspan="2">Work</td>  <!-- rowspan 속성을 사용하여 테이블 데이터가 행에 걸쳐있을 수 있다. -->
+      <td rowspan="3">Relax</td>
+    </tr>
+    <tr>
+     <th scope="row">Afternoon</th>
+    </tr>
+    <tr>
+      <th scope="row">Evening</th>
+      <td>Dinner</td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br><br>
+
+<table border="1">
+  <tr>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+  </tr>
+  <tr>
+    <td colspan="2">Out of Town</td> <!-- colspan 속성을 사용하여 테이블 데이터가 열에 걸쳐있을 수 있다. -->
+    <td>Back in Town</td>
+  </tr>
+</table>
+
+</body>
+</html>

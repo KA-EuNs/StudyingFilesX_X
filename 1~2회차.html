@@ -1,0 +1,73 @@
+<!doctype html> <!-- 항상 HTML파일에서 첫 번쨰 코드 행이여야 하며 이를 통해 브라우저는 어떤 HTML버전을 기대해야하는지 알 수 있다. -->
+<html>
+ <head>
+   
+  <title>Brown Bear</title> <!-- head는 브라우저에 보이지 않는 정보인 메타데이터가 들어가 있으며 <title>와 같은 코드들이 있다. -->
+ </head>
+
+ <body>
+
+   <a href="./index.html">Brown Bear</a> <!-- 외부 페이지가 아닌 내부 페이지를 연결하는 코드이다. 
+                                             ./in ./index.html은 브라우저가 현재 폴더에서 파일을 찾도록 지시한다-->
+   <a href="./aboutme.html">About Me</a>
+  <h1>The Brown Bear</h1> <!-- h(1~6)까지 헤드라인쓸떄 사용하며 숫자가 높아질수록 크기가 작아진다. -->
+    <ul> <!-- 순서가 정해져 있지 않은 리스트 -->
+      <li><a href="#introduction">Introduction</a></li> 
+	  <!-- 미리 설정해 놓은 아이디로 이동(링크는 #문자와 대상 요소의 ID를 포함하는 문자열이다) -->
+      <li><a href="#habitat">Habitat</a></li>
+      <li><a href="#media">Media</a></li>
+	</ul>
+  <div id="introduction"> <!-- <div>를 이용해 구간 나누기(아이디를 생성해 놓음으로써 간편하게 해당 아이디로 이동할 수 있다) -->
+    <h2>About Brown Bears</h2>
+    <p>The brown bear (<em>Ursus arctos</em>) is native to parts of northern<br> <!--  -->
+  Eurasia and North America. Its conservation status is currently<br>
+  <strong>Least Concern</strong>.</p>
+  <!-- <em>~</em>은 특정 단어에 특정한 글씨로 강조하는 것이고 <strong>`</strong>는 크기를 키워 강조하는 것이다. -->
+
+    <p>There are many subspecies within the brown bear species,<br>
+  including the Atlas bear and the Himalayan brown bear.</p>
+    <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">Learn More</a> 
+	 <!-- 하이퍼링크를 사용할 때 target="_blank"를 이용하며 새 창에서 링크를 띄울수 있다. -->
+  <h3>Species</h4>
+    <ul>
+      <li>Arctos</li>
+      <li>Collarus</li>
+      <li>Horribilis</li>
+      <li>Nelsoni (extinct)</li>
+    </ul>
+  <h3>Features</h4>
+    <p>Brown bears are not always completely brown. Some can be<br>
+  reddish or yellowish. They have very large, curved claws and<br>
+  huge paws. Male brown bears are often 30% larger than female<br>
+  brown bears. They can range from 5 feet to 9 feet from head to<br>
+  toe.</p>
+  </div>
+
+  <div id="habitat">
+    <h2>Habitat<h2>
+    <h3>Countries with Large Brown Bear Populations</h3>
+    <ol> <!-- 순서가 정해져 있는 리스트 -->
+      <li>Russia</li>
+      <li>United States</li>
+      <li>Canada</li>
+    </ol>
+    <h3>Countries with Small Brown Bear Populations</h3>
+    <p>Some countries with smaller brown bear populations include<br>
+  Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India,<br>
+  Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and<br>
+  Uzbekistan.</p>
+  </div>
+
+  <div id="media">
+  <h2>Media</h2>
+    <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank"> <!-- 이미지에 하이퍼링크를 연결할 때 -->
+	<img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/web101-image_brownbear.jpg"/ >
+	</a>
+    <br>
+    <video src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4" 
+	height="240" width="320" controls>Video not supported</video>
+	<!-- 비디오를 생성하는 코드로써 height는 높이 width는 너비 controls는 동영상을 재생 또는 일시정지할 수 있게 한다. -->
+  </div>
+
+ </body>
+</html>

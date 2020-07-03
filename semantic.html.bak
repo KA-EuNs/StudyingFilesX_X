@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Navigational Links</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#posts">Posts</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <header>, <nav>, <main> 및 <footer>는 웹 페이지의 기본 구조를 만든다 -->
+    <main>
+      <section> <!-- <section>은 장, 제목 또는 같은 테마를 가진 문서의 다른 영역과 같은 문서의 요소를 정의한다. -->
+        <article> <!-- <article>은 기사, 블로그, 댓글 등 자체적으로 의미있는 콘탠츠를 보유한다. -->
+          <h2>Facts About Dogs</h2>
+          <p>
+          Dogs have a sense of time. It's been proven that they know the difference between a hour and five. If conditioned to, they can predict future events, such as regular walk times.
+          </p>
+        </article>
+        <aside> <!-- <aside>에는 주요 내용과 관련된 정보과 포함되어 있지만 주요 정보를 이해하기 위해 필요하지는 않다(참고믄헌등) -->
+          <p>A study was conducted on dogs being away from their owners for varying hours and the studies show that dogs who were away from their owners the longest showed the greatest amount of affection!
+          </p> 
+        </aside>
+      </section> 
+      <figure> <!-- <figure>는 모은 유형의 미디어를 캡슐화한다 -->
+        <img src="https://content.codecademy.com/courses/SemanticHTML/dogimage.jpeg"/>
+        <figcaption>A cute dog.</figcaption> <!-- <figcaption>은 <figure>의 미디어를 설명하는데 사용된다 -->
+      </figure>  
+	  <!-- 미디어 파일에는 <video>, <embed>, <audio>요소가 사용된다. -->
+      <audio controls>
+        <source src="https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3" type="audio/mp3">
+		<!--  -->
+      </audio> 
+      <video src="https://content.codecademy.com/courses/SemanticHTML/dog-video.mp4" controls>
+      </video>
+      <embed src="https://content.codecademy.com/courses/SemanticHTML/dog-on-beach.gif"/>
+         
+    </main>
+    
+    <footer>
+      <p>Contact me at +1 234 567 8910 </p>
+    </footer>
+              
+  </body>
+</html>
