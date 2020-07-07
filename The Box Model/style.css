@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box; /* 이 속성은 박스의 크기를 일정하게 고정시키다. */
+}
+
+body {
+    background-color: white; /* 배경색을 설정 */
+    font-family: 'Raleway', sans-serif; /* 글자의 형식을 설정 */
+  }
+  
+  .navigation ul { /* .은 html에서 클래스로 설정되어 있는 부분을 바꿀때 사용한다. */
+    margin: 0; /* margin은 border 바깥영역의 넓이를 설정한다. */
+    padding: 0; /* padding은 border 안쪽의 넓이를 설정한다. padding-top, padding-right등을 이용해서 각 방향의 넓이를 설정할 수 있다.; */
+    text-align: center; /* 텍스트를 중앙에 위치시킨다. */
+  }
+  
+  .navigation li { /* class navigation 안에 li 요소들의 대한 설정이다. */
+    font-weight: 100; /* 글자의 두깨 설정 */
+    letter-spacing: 2px; /* 글자간의 간결을 지정해준다. */
+    padding: 20px;
+  }
+  
+  .navigation  li.logo { /* class navigation -> li -> class logo */
+    color: black;
+    font-size: 18px; /* 글자 크기를 설정 */
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
+  
+  #banner { /* #은 html에서 id로 지정한 구역의 대한 css특성을 적용할때 사용된다. */
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg"); /* 배경사진 url */
+    background-size: cover;  
+    background-position: bottom center;
+    height: 700px;
+    width: 100%;
+  }
+  
+  #banner .content h1 { /* id banner -> class content -> h1 */
+    border: 3px solid white; /* 박스에 경계선을 설정 두께 속성 색깔 */
+    position: relative; 
+    top: 50px;
+    width: 400px;
+    margin: 0 auto; /* top & bottom은 0 left & righy는 자동으로 중앙으로 설정된다. */
+  }
+  
+  #main {
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    width: 400px;
+    height: 1000px;
+    overflow: scroll; /* 안에 내용들이 지정한 구역을 넘어갈 경우에 대한 설정으로 scroll visible hidden등이 있다. */
+  }
+  
+  h1 {
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  h2 {
+    border: 1px dotted red;
+    color: red;
+    font-size: 14px;
+    line-height: 48px;
+    padding: 20px 30px;
+    margin: 30px 20px;
+    text-align: center;
+  }
+  
+  h3 {
+    color: red;
+    font-size: 26px;
+    font-weight: 700;
+    padding: 20px 10px;
+  }
+  
+  p {
+    color: grey;
+    font-size: 16px;
+    line-height: 48px;
+    margin-top: 60px;
+    padding: 10px 20px;
+  }
+  
+  .pull-quote {
+    margin: 0 auto;
+    width: 400px;
+  }
+  
+  .byline {
+    border-bottom: 1px solid LightGrey; /* border를 전체 다 씌운게 아니라 위아래만 씌었다. */
+    border-top: 1px solid LightGrey;
+    color: DarkGrey;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  
+  .share {
+    border: 1px solid LightGrey;
+    padding: 40px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .share a {
+    background: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  .share a:hover {
+    background: white;
+    border: 1px solid red;
+    color: red;
+  }
