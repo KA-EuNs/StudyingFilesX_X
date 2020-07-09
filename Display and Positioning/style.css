@@ -7,7 +7,7 @@ header {
   background-color: #333333;
   position: fixed;
   width:100%;
-  z-index:5;
+  z-index:5; /*z-index는 요소들이 겹칠 때 우선순위 설정 숫자가 더 높은것이 우선순위가 높아 위에 표시된다. */
 }
 
 nav {
@@ -22,6 +22,10 @@ nav li {
   font-size: 12px;
   display:inline-block;
   width: 80px;
+  /* display속성에는 inline, block, inline-block 세 가지가 있다
+    inline은 컨텐츠 자체만을 꾸며주는 것으로 박스크기를 설정한 것을 무시하고 안에 내용에 크기에 맞게 꾸며준다 한줄에 넣는다.
+    inline-block은 inline과 마찬가지로 한줄에 넣는데 컨텐츠 단위가 아닌 박스 단위로 넣는다.
+    block은 한줄에 하나씩 박스 단위로 넣는다.*/
 }
 
 main {
@@ -29,6 +33,10 @@ main {
   position: relative;
   top:80px;
 }
+/* position의 기본값은 static으로 되어있고 relative, absolute, fixed, sticky등이 있다..
+   relative는 요소의 위치를 페이지의 기본 위치를 기준으로 한다..
+   absolute는 요소가 담겨있는 부모요소 내에서 값만큼 움직인다.
+   fixed는 웹페이지에 어디든 고정시켜 스크롤이 되도 같이 움직인다.*/
 
 main h1 {
   color: #333;
